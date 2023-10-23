@@ -1,0 +1,58 @@
+﻿@page
+@model TugasAsinkron1.Pages.Products.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            <label>Nama Produk</label>
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.NamaProduk)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Product.Deskripsi)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.Deskripsi)
+        </dd>
+        <dt class="col-sm-2">
+            <label>Quantity</label>
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.Qty)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Product.Satuan)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.Satuan)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Product.Harga)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.Harga)
+        </dd>
+        <dt class="col-sm-2">
+            <label>Nama Supplier</label>
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.Supplier.NamaSupplier)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Product.ProdukId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a class="btn btn-primary" asp-page="./Index">Back to List</a>
+    </form>
+</div>

@@ -1,0 +1,125 @@
+﻿@page
+@model TugasAsinkron1.Pages.Suppliers.IndexModel
+
+@{
+	ViewData["Title"] = "Suppliers";
+}
+
+<h1>Daftar Suppliers</h1>
+
+<div class="btn-group">
+	<button type="submit" class="btn btn-success rounded"  onclick="redirectToCreatePage()">Create New</button>
+	<a asp-page="./Index" asp-page-handler="ExportToJson" class="btn btn-primary rounded" style="margin-left: 10px;">Export to JSON</a>
+</div>
+
+@if (TempData["ExportMessage"] != null)
+{
+	<div id="notification" class="alert alert-success" style="display: block; position: relative; margin-top: 20px">
+		@TempData["ExportMessage"]
+		<button class="close btn btn-outline-dark rounded" onclick="clearNotification()" style="position: absolute; top: 50%; transform: translateY(-50%); right: 15px;">
+			<span>&times;</span>
+		</button>
+		<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+			<div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+				<div class="toast-header">
+					<img src="/Images/img.jpg" class="rounded me-2" alt="Image" style="max-width: 20px; max-height: 20px;">
+					<strong class="me-auto">Notifications</strong>
+					<small></small>
+					<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+				</div>
+				<div class="toast-body">
+					@TempData["ExportMessage"]
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+}
+
+<table class="table table-slider">
+	<thead>
+		<tr>
+			<th>
+				<label>Nama Supplier</label>
+			</th>
+			<th>
+				<label>Alamat</label>
+			</th>
+			<th>
+				<label>Nomor Telepon</label>
+			</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model.Supplier)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.NamaSupplier)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Alamat)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Tlp)
+				</td>
+				<td>
+					<a class="btn btn-info text-white" asp-page="./Edit" asp-route-id="@item.SupplierId">Edit</a> |
+					<a class="btn btn-secondary" asp-page="./Details" asp-route-id="@item.SupplierId">Details</a> |
+					<a class="btn btn-danger" asp-page="./Delete" asp-route-id="@item.SupplierId">Delete</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+	<div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+		<div class="toast-header">
+			<img src="/Images/img.jpg" class="rounded me-2" alt="Image" style="max-width: 20px; max-height: 20px;">
+			<strong class="me-auto">Notifications</strong>
+			<small></small>
+			<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+		</div>
+		<div class="toast-body">
+			@TempData["ExportMessage"]
+		</div>
+	</div>
+</div>
+
+
+<script>
+	function redirectToCreatePage() {
+		window.location.href = '/Suppliers/Create?'; // Ganti dengan URL ke halaman Create yang sesuai
+	}
+
+	// Fungsi untuk menyembunyikan notifikasi
+	function clearNotification() {
+		document.getElementById("notification").style.display = "none"; // Menyembunyikan notifikasi
+		TempData["ExportMessage"] = null; // Menghapus isi TempData
+	}
+
+	var toastTrigger = document.getElementById('liveToastBtn')
+	console.log(toastTrigger)
+	var toastLiveExample = document.getElementById('liveToast')
+	console.log(toastLiveExample)
+
+	// Cek apakah harus menampilkan toast
+	var shouldShowToast = @((TempData["ShowToast"] as string) == "true" ? "true" : "false");
+	console.log(shouldShowToast)
+
+	if (toastTrigger) {
+		toastTrigger.addEventListener('click', function () {
+			var toast = new bootstrap.Toast(toastLiveExample)
+
+			toast.show()
+		})
+	}
+
+
+</script>

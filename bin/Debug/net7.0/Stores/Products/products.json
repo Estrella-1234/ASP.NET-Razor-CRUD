@@ -1,0 +1,52 @@
+[
+  {
+    "NamaProduk": "ASUS TUF GAMING A16 ADVANTAGE EDITION",
+    "Deskripsi": "Terjun ke dalam permainan dengan TUF Gaming A16 AdvantageTM Edition. Siarkan dan lakukan banyak hal sekaligus dengan mudah, terima kasih pada prosesor AMD RyzenTM 7 7735HS terbaru dan RAM 32GB DDR5 4800Mhz yang luar biasa cepat pada Windows 11. Tingkatkan performa gaming dari GPU AMD RadeonTM RX 7600S dengan AMD Smart Access Graphics. ",
+    "Qty": 10,
+    "Satuan": "Unit",
+    "Harga": "$1.379.00",
+    "NamaSupplier": "Supplier A",
+    "Alamat": "Jalan ABC No. 123",
+    "Tlp": "(123) 456-7890"
+  },
+  {
+    "NamaProduk": " Google Pixel 8 Pro",
+    "Deskripsi": "The new Google Tensor G3 chip is custom-designed with Google AI for cutting-edge photo and video features on Google Pixel 8 Pro",
+    "Qty": 25,
+    "Satuan": "Unit",
+    "Harga": "$ 999.00",
+    "NamaSupplier": "Supplier A",
+    "Alamat": "Jalan ABC No. 123",
+    "Tlp": "(123) 456-7890"
+  },
+  {
+    "NamaProduk": "ZOWIE XL2566K",
+    "Deskripsi": "The XL2566K features a Fast TN panel with 360Hz refresh rate, including DyAc⁺™ technology for pro players to experience smooth gameplay with clarity.",
+    "Qty": 50,
+    "Satuan": "Unit",
+    "Harga": "$599.00",
+    "NamaSupplier": "Supplier E",
+    "Alamat": "Jalan MNO No. 1314",
+    "Tlp": "(777) 888-9999"
+  },
+  {
+    "NamaProduk": "HyperX Cloud III Wireless - Gaming Headset",
+    "Deskripsi": "The HyperX Cloud III Wireless is a new chapter in the legend of the Cloud II. This wireless evolution builds upon the soul of the Cloud II Wireless while incorporating new tech and a bold new look.",
+    "Qty": 8,
+    "Satuan": "Unit",
+    "Harga": "$169.99",
+    "NamaSupplier": "Supplier C",
+    "Alamat": "Jalan DEF No. 789",
+    "Tlp": "(111) 222-3333"
+  },
+  {
+    "NamaProduk": "Logitech G PRO X SUPERLIGHT 2",
+    "Deskripsi": "LIGHTSPEED Wireless Gaming Mouse",
+    "Qty": 30,
+    "Satuan": "Unit",
+    "Harga": "$159.00",
+    "NamaSupplier": "Supplier D",
+    "Alamat": "Jalan GHI No. 1011",
+    "Tlp": "(444) 555-6666"
+  }
+]

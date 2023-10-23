@@ -1,0 +1,56 @@
+﻿@page
+@model TugasAsinkron1.Pages.Products.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>New Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Product.NamaProduk" class="control-label">Nama Produk</label>
+                <input asp-for="Product.NamaProduk" class="form-control" />
+                <span asp-validation-for="Product.NamaProduk" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.SupplierId" class="control-label">Nama Supplier</label>
+                <select asp-for="Product.SupplierId" class ="form-control" asp-items="ViewBag.SupplierId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Deskripsi" class="control-label"></label>
+                <input asp-for="Product.Deskripsi" class="form-control" />
+                <span asp-validation-for="Product.Deskripsi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Qty" class="control-label">Quantity</label>
+                <input asp-for="Product.Qty" class="form-control" />
+                <span asp-validation-for="Product.Qty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Satuan" class="control-label"></label>
+                <input asp-for="Product.Satuan" class="form-control" />
+                <span asp-validation-for="Product.Satuan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Harga" class="control-label"></label>
+                <input asp-for="Product.Harga" class="form-control" />
+                <span asp-validation-for="Product.Harga" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-2">
+                <input type="submit" value="Create" class="btn btn-success" />
+                <a class="btn btn-primary" asp-page="Index">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

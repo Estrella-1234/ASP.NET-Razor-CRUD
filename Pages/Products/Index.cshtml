@@ -1,0 +1,94 @@
+﻿@page
+@model TugasAsinkron1.Pages.Products.IndexModel
+
+@{
+	ViewData["Title"] = "Products";
+}
+
+<h1>Daftar Products</h1>
+
+
+<div class="btn-group">
+	<button type="submit" class="btn btn-success rounded" onclick="redirectToCreatePage()">Create New</button>
+	<a asp-page="./Index" asp-page-handler="ExportToJson" class="btn btn-primary rounded" style="margin-left: 10px;">Export to JSON</a>
+</div>
+
+@if (TempData["ExportMessage"] != null)
+{
+	<div id="notification" class="alert alert-success" style="display: block; position: relative; margin-top: 20px">
+		@TempData["ExportMessage"]
+		<button class="close btn btn-outline-dark rounded" onclick="clearNotification()" style="position: absolute; top: 50%; transform: translateY(-50%); right: 15px;">
+			<span>&times;</span>
+		</button>
+	</div>
+}
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				<label>Nama Produk</label>
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Product[0].Deskripsi)
+			</th>
+			<th>
+				<label>Quantity</label>
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Product[0].Satuan)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Product[0].Harga)
+			</th>
+			<th>
+				<label>Nama Supplier</label>
+			</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model.Product)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.NamaProduk)
+				</td>
+				<td>
+					<span style="max-width: 200px; display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+						@Html.DisplayFor(modelItem => item.Deskripsi)
+					</span>
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Qty)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Satuan)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Harga)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Supplier.NamaSupplier)
+				</td>
+				<td>
+					<a class="btn btn-info text-white" asp-page="./Edit" asp-route-id="@item.ProdukId">Edit</a> |
+					<a class="btn btn-secondary" asp-page="./Details" asp-route-id="@item.ProdukId">Details</a> |
+					<a class="btn btn-danger" asp-page="./Delete" asp-route-id="@item.ProdukId">Delete</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+
+<script>
+	function redirectToCreatePage() {
+		window.location.href = '/Products/Create?'; // Ganti dengan URL ke halaman Create yang sesuai
+	}
+
+	function clearNotification() {
+		document.getElementById("notification").style.display = "none"; // Menyembunyikan notifikasi
+	}
+
+</script>

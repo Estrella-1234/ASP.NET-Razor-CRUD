@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TugasAsinkron1.props" />
+</Project>

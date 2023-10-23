@@ -1,0 +1,55 @@
+﻿@page
+@model TugasAsinkron1.Pages.Products.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            <label>Nama Produk</label>
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.NamaProduk)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Product.Deskripsi)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.Deskripsi)
+        </dd>
+        <dt class="col-sm-2">
+            <label>Quantity</label>
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.Qty)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Product.Satuan)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.Satuan)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Product.Harga)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.Harga)
+        </dd>
+        <dt class="col-sm-2">
+            <label>Nama Supplier</label>
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.Supplier.NamaSupplier)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-info text-white" asp-page="./Edit" asp-route-id="@Model.Product?.ProdukId">Edit</a> |
+    <a class="btn btn-primary" asp-page="./Index">Back to List</a>
+</div>
