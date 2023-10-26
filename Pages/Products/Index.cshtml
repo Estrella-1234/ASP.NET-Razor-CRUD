@@ -82,13 +82,15 @@
 </table>
 
 
-<script>
-	function redirectToCreatePage() {
-		window.location.href = '/Products/Create?'; // Ganti dengan URL ke halaman Create yang sesuai
-	}
+@section Scripts {
+	<script>
+		function redirectToCreatePage() {
+			window.location.href = '/Products/Create?'; // Ganti dengan URL ke halaman Create yang sesuai
+		}
 
-	function clearNotification() {
-		document.getElementById("notification").style.display = "none"; // Menyembunyikan notifikasi
-	}
+		function clearNotification() {
+			document.getElementById("notification").style.display = "none"; // Menyembunyikan notifikasi
+		}
 
-</script>
+	</script>
+}

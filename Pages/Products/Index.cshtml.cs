@@ -34,12 +34,9 @@ namespace TugasAsinkron1.Pages.Products
             }
         }
 
-		public async Task<IActionResult> OnGetExportToJson()
+		public async Task<IActionResult> OnGetExportToJsonAsync()
 		{
-			Console.WriteLine("Exporting to JSON");
 			var products = await _context.Products.Include(p => p.Supplier).ToListAsync();
-			Console.WriteLine(products);
-
 
 			var jsonArray = new List<object>();
 
@@ -62,6 +59,8 @@ namespace TugasAsinkron1.Pages.Products
 
 			var jsonString = JsonConvert.SerializeObject(jsonArray, Formatting.Indented);
 
+			var bytes = Encoding.UTF8.GetBytes(jsonString);
+
 			var filePath = Path.Combine(Environment.CurrentDirectory, "Stores/Products/products.json");
 
 			// Membuat direktori jika tidak ada
@@ -74,25 +73,18 @@ namespace TugasAsinkron1.Pages.Products
 			// Menyimpan JSON ke file
 			System.IO.File.WriteAllText(filePath, jsonString);
 
-			// Menambahkan pesan flash
-			TempData["ExportMessage"] = "Data has been exported successfully.";
+			TempData["ExportMessage"] = "Supplier data has been exported successfully.";
 
-			return RedirectToAction("Index");
-
+			// Mengembalikan file JSON sebagai respons HTTP dengan nama "products.json"
+			return new FileContentResult(bytes, "application/json")
+			{
+				FileDownloadName = "products.json"
+			};
 		}
 
 
 
 
-		public IActionResult OnPostExportToJson()
-		{
-			Console.WriteLine("Exporting to JSON2");
-			// Serialize the data to JSON
-			var json = JsonConvert.SerializeObject(Product);
-
-			// Return a ContentResult with the JSON data
-			return Content(json, "application/json");
-		}
 
 	}
 }

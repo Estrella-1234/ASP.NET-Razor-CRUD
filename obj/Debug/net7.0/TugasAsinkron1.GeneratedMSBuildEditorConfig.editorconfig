@@ -9,77 +9,77 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TugasAsinkron1
 build_property.RootNamespace = TugasAsinkron1
-build_property.ProjectDir = G:\ASP.NET\TugasAsinkron1\
+build_property.ProjectDir = G:\ASP.NET\TugasAsinkron1\ASP.NET-Razor-CRUD\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = G:\ASP.NET\TugasAsinkron1
+build_property.MSBuildProjectDirectory = G:\ASP.NET\TugasAsinkron1\ASP.NET-Razor-CRUD
 build_property._RazorSourceGeneratorDebug = 
 
-[G:/ASP.NET/TugasAsinkron1/Pages/Error.cshtml]
+[G:/ASP.NET/TugasAsinkron1/ASP.NET-Razor-CRUD/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/ASP.NET/TugasAsinkron1/Pages/Index.cshtml]
+[G:/ASP.NET/TugasAsinkron1/ASP.NET-Razor-CRUD/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/ASP.NET/TugasAsinkron1/Pages/Privacy.cshtml]
+[G:/ASP.NET/TugasAsinkron1/ASP.NET-Razor-CRUD/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/ASP.NET/TugasAsinkron1/Pages/Products/Create.cshtml]
+[G:/ASP.NET/TugasAsinkron1/ASP.NET-Razor-CRUD/Pages/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/ASP.NET/TugasAsinkron1/Pages/Products/Delete.cshtml]
+[G:/ASP.NET/TugasAsinkron1/ASP.NET-Razor-CRUD/Pages/Products/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/ASP.NET/TugasAsinkron1/Pages/Products/Details.cshtml]
+[G:/ASP.NET/TugasAsinkron1/ASP.NET-Razor-CRUD/Pages/Products/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/ASP.NET/TugasAsinkron1/Pages/Products/Edit.cshtml]
+[G:/ASP.NET/TugasAsinkron1/ASP.NET-Razor-CRUD/Pages/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/ASP.NET/TugasAsinkron1/Pages/Products/Index.cshtml]
+[G:/ASP.NET/TugasAsinkron1/ASP.NET-Razor-CRUD/Pages/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/ASP.NET/TugasAsinkron1/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[G:/ASP.NET/TugasAsinkron1/ASP.NET-Razor-CRUD/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/ASP.NET/TugasAsinkron1/Pages/Suppliers/Create.cshtml]
+[G:/ASP.NET/TugasAsinkron1/ASP.NET-Razor-CRUD/Pages/Suppliers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwcGxpZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/ASP.NET/TugasAsinkron1/Pages/Suppliers/Delete.cshtml]
+[G:/ASP.NET/TugasAsinkron1/ASP.NET-Razor-CRUD/Pages/Suppliers/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwcGxpZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/ASP.NET/TugasAsinkron1/Pages/Suppliers/Details.cshtml]
+[G:/ASP.NET/TugasAsinkron1/ASP.NET-Razor-CRUD/Pages/Suppliers/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwcGxpZXJzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/ASP.NET/TugasAsinkron1/Pages/Suppliers/Edit.cshtml]
+[G:/ASP.NET/TugasAsinkron1/ASP.NET-Razor-CRUD/Pages/Suppliers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwcGxpZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/ASP.NET/TugasAsinkron1/Pages/Suppliers/Index.cshtml]
+[G:/ASP.NET/TugasAsinkron1/ASP.NET-Razor-CRUD/Pages/Suppliers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwcGxpZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/ASP.NET/TugasAsinkron1/Pages/_ViewImports.cshtml]
+[G:/ASP.NET/TugasAsinkron1/ASP.NET-Razor-CRUD/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/ASP.NET/TugasAsinkron1/Pages/_ViewStart.cshtml]
+[G:/ASP.NET/TugasAsinkron1/ASP.NET-Razor-CRUD/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/ASP.NET/TugasAsinkron1/Pages/Shared/_Layout.cshtml]
+[G:/ASP.NET/TugasAsinkron1/ASP.NET-Razor-CRUD/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xtdo6hydlq

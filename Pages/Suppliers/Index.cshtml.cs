@@ -76,7 +76,10 @@ namespace TugasAsinkron1.Pages.Suppliers
 			// Tambahkan kode JavaScript untuk memicu toast
 			TempData["ShowToast"] = "true";
 
-			return RedirectToPage("Index");
-        }
+			return new FileContentResult(byteArray, "application/json")
+			{
+				FileDownloadName = "suppliers.json"
+			};
+		}
     }
 }

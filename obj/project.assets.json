@@ -11220,11 +11220,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\ASP.NET\\TugasAsinkron1\\TugasAsinkron1.csproj",
+      "projectUniqueName": "G:\\ASP.NET\\TugasAsinkron1\\ASP.NET-Razor-CRUD\\TugasAsinkron1.csproj",
       "projectName": "TugasAsinkron1",
-      "projectPath": "G:\\ASP.NET\\TugasAsinkron1\\TugasAsinkron1.csproj",
+      "projectPath": "G:\\ASP.NET\\TugasAsinkron1\\ASP.NET-Razor-CRUD\\TugasAsinkron1.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "G:\\ASP.NET\\TugasAsinkron1\\obj\\",
+      "outputPath": "G:\\ASP.NET\\TugasAsinkron1\\ASP.NET-Razor-CRUD\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

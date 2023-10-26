@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SiLkmfMCC4pFM0wz+P8wGRNhj+1PH/27N/kFnq4H5jIOHRtcr1dwjJjo2+SI5lGC4jfLjo4r92QQSzRGoZFx/A==",
+  "dgSpecHash": "uI/eXbbO1vThwOuLUZ/kj5WIGCHtBT/jtqwpPXg6Za/Yz4RbtXxR7Ls5sG9EMY4JXkk0krXgfHteMV9vFoWcBA==",
   "success": true,
-  "projectFilePath": "G:\\ASP.NET\\TugasAsinkron1\\TugasAsinkron1.csproj",
+  "projectFilePath": "G:\\ASP.NET\\TugasAsinkron1\\ASP.NET-Razor-CRUD\\TugasAsinkron1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
